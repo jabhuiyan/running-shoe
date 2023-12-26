@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<%- include('./partials/head') -%>
+
+<body id="login-body">
+<!-- Login page start -->
+<div class="login-box fade-in-fast">
+    <h1>Running Shoe Repo</h1>
+  <div class="login-box-head">Login</div>
+  <div class="login-box-body">
+      <!-- Login form start -->
+    <form onsubmit="login(event)">
+      <!-- Input field: email -->
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          name="email"
+          placeholder="Email Address"
+        />
+      </div>
+      <!-- Input field password -->
+      <div class="form-group">
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          placeholder="Password"
+        />
+      </div>
+      <!-- Submit button -->
+      <div class="form-group fade-in-slow">
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </div>
+      <div class="error text-danger"></div>
+    </form>
+    <!-- End of form -->
+  </div>
+  
+</div>
+<script src="/scripts/shoes-ajax.js"></script>
+<script src="/scripts/users-ajax.js"></script>
+</body>
+</html>

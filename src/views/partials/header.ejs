@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<%- include('./head') -%>
+<body>
+  <!-- Navbar first start -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="/ui/shoes">Running Shoe Repo</a>
+
+      <!-- Collapse button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Content to be collapsed -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <!-- List of navigations 1 -->
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/ui/shoes">Shoes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ui/users">Users</a>
+          </li>
+        </ul>
+
+        <!-- List of navigation 2 -->
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <!-- To be replaced by real name using Javascript -->
+              <span id="user_name">User</span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- Edit User button -->
+              <a class="dropdown-item" href="#" id="user_edit">Edit User</a>
+
+              <!-- Logout button -->
+              <a class="dropdown-item" href="#" onclick="logout(event)"
+                >Logout</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar first end -->
+</body>

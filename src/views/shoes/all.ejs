@@ -1,0 +1,88 @@
+<%- include('../partials/header') -%>
+
+<div class="container">
+  <!-- List of products include -->
+  <!-- Title -->
+
+<h1>
+  List of Shoes
+
+  <!-- Button to add all products -->
+
+    <button class="btn btn-dark admin-visible" onclick="window.location='/ui/shoes/add'">
+      + New Shoe
+    </button>
+</h1>
+
+<!-- Products navbar using bootstrap -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <!-- Collapse button during mobile view -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Search form -->
+      <form class="form-inline my-2 my-lg-0" onsubmit="searchShoe(event);">
+        <input
+          class="form-control mr-sm-2"
+          type="text"
+          placeholder="Search"
+          aria-label="Search"
+          id="search-shoe"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Products navbar end -->
+
+  <!-- List of Products shown -->
+
+  <div class="table-contianer">
+
+    <!-- Table for products list start -->
+    <table class="table" id="list-products">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Material</th>
+          <th>Price</th>
+          <th>Rating</th>
+          <th class="admin-visible">Admin</th>
+        </tr>
+      </thead>
+
+      <!-- tbody to be filled using ajax -->
+      <tbody class="content"></tbody>
+    </table>
+</div>
+  <!-- Success message -->
+  <div class="success text-success"></div> 
+
+  <!-- Error message -->
+  <div class="error text-danger"></div>
+</div>
+
+  <script>
+    $(document).ready(function() {
+      getAllShoes(); //get all products and update dom
+    });
+  </script>
+
+  <%- include('../partials/footer') -%>
+</div>

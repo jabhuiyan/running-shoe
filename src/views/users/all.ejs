@@ -1,0 +1,47 @@
+<%- include('../partials/header') -%>
+
+<div class="container">
+  <!-- Title -->
+
+<h1>
+    Users
+  
+    <!-- Button to add all products -->
+  
+      <button class="btn btn-dark admin-visible" onclick="window.location='/ui/users/add'">
+        + New User
+      </button>
+  
+  </h1>
+  
+  
+    <!-- List of Users shown -->
+    <table class="table" id="list-users">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th class="admin-visible">Admin</th>
+        </tr>
+      </thead>
+  
+      <!-- tbody to be filled using ajax -->
+      <tbody class="content"></tbody>
+      
+    </table>
+
+    <!-- Success message -->
+    <div class="success text-success"></div> 
+  
+    <!-- Error message -->
+    <div class="error text-danger"></div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      getAllUsers();
+    });
+  </script>
+
+  <%- include('../partials/footer') -%>
+</div>
