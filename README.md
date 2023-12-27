@@ -1,4 +1,39 @@
-# Running Shoe Repo
+# Running Shoe demo
+------------------------
+login page
+![image](https://github.com/jabhuiyan/running-shoe/blob/main/demo/login.jpg)
+
+### admin side
+
+homepage
+![image](https://github.com/jabhuiyan/running-shoe/blob/main/demo/homepage.jpg)
+
+users list
+![image](https://github.com/jabhuiyan/running-shoe/blob/main/demo/users.jpg)
+
+add users
+![image](https://github.com/jabhuiyan/running-shoe/blob/main/demo/adduser.jpg)
+
+edit user info
+![image](https://github.com/jabhuiyan/running-shoe/blob/main/demo/edituser.jpg)
+
+add shoes
+![image](https://github.com/jabhuiyan/running-shoe/blob/main/demo/addshoe.jpg)
+
+shoe info page
+![image](https://github.com/jabhuiyan/running-shoe/blob/main/demo/shoe.jpg)
+
+
+### user side
+
+homepage
+![image](https://github.com/jabhuiyan/running-shoe/blob/main/demo/homepagev2.jpg)
+
+users list
+![image](https://github.com/jabhuiyan/running-shoe/blob/main/demo/usersv2.jpg)
+
+edit user info and shoe page stays the same.
+
 
 # Features Description
 
